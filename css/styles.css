@@ -535,7 +535,7 @@ img {
 }
 
 .modal-close-btn-icon {
-stroke: #111111;
+    stroke: #111111;
 }
 
 .modal-close-btn:hover,
@@ -554,7 +554,7 @@ stroke: #111111;
     background-color: #E7E9FC;
     border-radius: 50%;
     border-width: 1px;
-        border-color: rgba(0, 0, 0, 0.10);
+    border-color: rgba(0, 0, 0, 0.10);
     line-height: 0;
     transition: stroke 250ms linear;
 }
@@ -566,13 +566,13 @@ stroke: #111111;
 
 .review-form-description {
     color: #2E2F42;
-        text-align: center;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        margin-bottom: 16px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
 }
 
 .review-form-field-wrapper {
@@ -595,20 +595,13 @@ stroke: #111111;
 
 .review-form-input {
     width: 100%;
-    max-height: 40px;
+    height: 40px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
     background-color: transparent;
     padding-left: 38px;
-    padding-top: 29px;
-    padding-bottom: 11px;
     transition: border-color 250ms linear;
     outline: 0px solid transparent;
-    color: #2E2F42;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
 }
 
 .review-form-input:focus {
@@ -639,10 +632,10 @@ stroke: #111111;
     transition: border-color 250ms linear;
     outline: 0px solid transparent;
     color: #2E2F42;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
 }
 
 .review-form-comment::placeholder {
@@ -654,14 +647,15 @@ stroke: #111111;
 }
 
 .review-form-checkbox-wrapper {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 
 .review-form-checkbox-label {
-    font-size: 14px;
+    color: #8E8F99;
+    font-size: 12px;
     font-weight: 400;
-    letter-spacing: -0.02em;
-    color: rgba(64, 64, 64, 0.6);
+    line-height: 1.17;
+    letter-spacing: 0.04em;
 }
 
 .review-form-own-checkbox {
@@ -693,21 +687,37 @@ stroke: #111111;
     opacity: 1;
 }
 
+.accent-color {
+    color: #4D5AE5;
+    text-decoration-line: underline;
+}
+
 .review-form-submit-btn {
-    min-width: 117px;
-    padding: 14px 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    min-width: 169px;
+    max-height: 56px;
+    padding: 16px 32px;
     border: none;
     border-radius: 4px;
     background-color: #4D5AE5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: #ffffff;
     transition: background-color 250ms linear, color 250ms linear;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+}
 
-    
+
 
 .review-form-submit-btn:hover,
 .review-form-submit-btn:focus {
-    background-color: #4D5AE5;
+    background-color: #404BBF;
 }
 
 /* ============== /MODAL WINDOW STYLES ============== */
