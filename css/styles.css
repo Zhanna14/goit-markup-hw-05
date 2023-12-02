@@ -544,6 +544,11 @@ img {
 
 }
 
+.footer-form-submit-btn:focus,
+.footer-form-submit-btn:hover {
+    background-color: #404BBF;
+}
+
 .footer-form-input-icon {
     fill: #ffffff;
     margin-left: 16px;
