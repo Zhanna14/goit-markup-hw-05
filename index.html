@@ -459,6 +459,26 @@
                 </ul>
 
             </div>
+
+            <div class="footer-container-social">
+                <p class="social">Subscribe</p>
+                
+                <form class="footer-form">
+                    <label class="review-form-field-label" for="user-email">
+                        <input class="footer-form-input" id="user-email" name="user-email" type="email" placeholder="E-mail" required />
+                    </label>
+                    
+                    <button class="footer-form-submit-btn" type="submit">Subscribe
+                        <svg class="footer-form-input-icon" width="24" height="24" aria-label="icon email">
+                            <use href="./images/icons.svg#icon-airplane"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+
+
+
         </div>
 
 
@@ -475,7 +495,7 @@
 
     <div class="backdrop is-open">
         <div class="modal">
-            <button class="modal-close-btn">
+            <button class="modal-close-btn" type="button">
                 <svg class="modal-close-btn-icon" width="8" height="8" aria-label="close modal icon">
                     <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
                 </svg>
@@ -488,8 +508,8 @@
                     <label class="review-form-field-label" for="user-name">Name</label>
                     <div class="review-form-input-wrapper">
                         <input class="review-form-input" id="user-name" name="user-name" type="text"
-                            pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+" title="Oleksii" required />
-                        <svg class="review-form-input-icon" width="18" height="18" aria-label="icon user">
+                            pattern="[a-zA-Za-яА-ЯіІїЇєЄґҐʼ]+" title="Oleksii" required />
+                        <svg class="review-form-input-icon" width="18" height="24" aria-label="icon user">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
                     </div>
@@ -500,7 +520,7 @@
                     <div class="review-form-input-wrapper">
                         <input class="review-form-input" id="user-tel" name="user-tel" type="tel"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" required />
-                        <svg class="review-form-input-icon" width="18" height="18" aria-label="icon phone">
+                        <svg class="review-form-input-icon" width="18" height="24" aria-label="icon phone">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
@@ -510,7 +530,7 @@
                     <label class="review-form-field-label" for="user-email">Email</label>
                     <div class="review-form-input-wrapper">
                         <input class="review-form-input" id="user-email" name="user-email" type="email" required />
-                        <svg class="review-form-input-icon" width="18" height="18" aria-label="icon email">
+                        <svg class="review-form-input-icon" width="18" height="24" aria-label="icon email">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
@@ -518,13 +538,13 @@
 
                 <div class="review-form-field-wrapper">
                     <label class="review-form-field-label" for="user-comment">Comment</label>
-                    <textarea class="review-form-comment" id="user-comment" name="user-comment" placeholder="Enter text"
+                    <textarea class="review-form-comment" id="user-comment" name="user-comment" placeholder="Text input"
                         required></textarea>
                 </div>
                 <div class="review-form-checkbox-wrapper">
-                    <input class="review-form-checkbox visually-hidden" id="user-privacy-policy"
-                        name="user-privacy-policy" type="checkbox" value="true" required />
-                    <label class="review-form-checkbox-label" for="user-privacy-policy">
+                    <input class="review-form-checkbox visually-hidden" id="user-privacy"
+                        name="user-privacy" type="checkbox" value="true" required />
+                    <label class="review-form-checkbox-label" for="user-privacy">
                         <span class="review-form-own-checkbox">
                             <svg class="review-form-own-checkbox-icon" width="10" height="8"
                                 aria-label="checkmark icon">

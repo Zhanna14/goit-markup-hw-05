@@ -473,6 +473,8 @@ img {
 .footer-container-social {
     width: 208px;
     height: 80px;
+    display: block;
+    margin-right: 80px;
 }
 
 .footer-container {
@@ -497,6 +499,57 @@ img {
 .foot-icon:hover {
     background-color: #31d0aa;
 }
+
+/* ============== foter-forma ============== */
+.footer-form {
+    display: flex;
+    gap: 24px;
+
+}
+
+.footer-form-input {
+    width: 264px;
+    height: 40px;
+    background-color: #2E2F42;
+    border: 1px solid #ffffff;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.footer-form-input::placeholder {
+    color: #ffffff;
+}
+
+.footer-form-submit-btn {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.footer-form-input-icon {
+    fill: #ffffff;
+    margin-left: 16px;
+
+}
+
 
 /* ============== BACKDROP STYLES ============== */
 .backdrop {
@@ -528,10 +581,15 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     background-color: #FCFCFC;
     border-radius: 4px;
     padding: 72px 24px 24px 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-close-btn-icon {
@@ -539,13 +597,18 @@ img {
 }
 
 .modal-close-btn:hover,
-.modal-close-btn:focus+.modal-close-btn-icon {
+.modal-close-btn:focus+.modal-close-btn-icon,
+.modal-close-btn:hover+.modal-close-btn-icon {
     stroke: #FFFFFF;
     fill: #FFFFFF;
 }
 
 .modal-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     top: 24px;
     right: 24px;
     padding: 0;
@@ -553,15 +616,15 @@ img {
     height: 24px;
     background-color: #E7E9FC;
     border-radius: 50%;
-    border-width: 1px;
-    border-color: rgba(0, 0, 0, 0.10);
+    cursor: pointer;
     line-height: 0;
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     background: #404BBF;
+    border: none;
 }
 
 .review-form-description {
@@ -587,6 +650,8 @@ img {
     color: #8E8F99;
     margin-bottom: 4px;
     letter-spacing: 0.02em;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
 }
 
 .review-form-input-wrapper {
@@ -596,7 +661,7 @@ img {
 .review-form-input {
     width: 100%;
     height: 40px;
-    border: 1px solid #8E8F99;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: transparent;
     padding-left: 38px;
@@ -614,7 +679,7 @@ img {
     left: 16px;
     transform: translateY(-50%);
     fill: #2E2F42;
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-input:focus+.review-form-input-icon {
@@ -624,18 +689,18 @@ img {
 .review-form-comment {
     width: 100%;
     height: 120px;
-    border: 1px solid #8E8F99;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: transparent;
     padding: 8px 16px;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: 0px solid transparent;
-    color: #2E2F42;
+    color: rgba(46, 47, 66, 0.4);
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
 }
 
 .review-form-comment::placeholder {
@@ -647,7 +712,7 @@ img {
 }
 
 .review-form-checkbox-wrapper {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .review-form-checkbox-label {
@@ -659,17 +724,21 @@ img {
 }
 
 .review-form-own-checkbox {
+    fill: transparent;
+    border-radius: 2px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 16px;
     height: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.40);
     cursor: pointer;
     margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-checkbox:checked+.review-form-checkbox-label>.review-form-own-checkbox {
+    border: none;
+    fill: #F4F4FD;
     background-color: #404BBF;
     border-color: #404BBF;
 }
@@ -694,6 +763,7 @@ img {
 
 .review-form-submit-btn {
     display: block;
+    cursor: pointer;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 24px;
@@ -705,7 +775,7 @@ img {
     background-color: #4D5AE5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: #ffffff;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-align: center;
     font-size: 16px;
     font-weight: 500;
