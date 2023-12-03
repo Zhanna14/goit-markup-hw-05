@@ -470,12 +470,6 @@ img {
     margin-top: 0;
 }
 
-.footer-container-social {
-    width: 208px;
-    height: 80px;
-    display: block;
-    margin-right: 80px;
-}
 
 .footer-container {
     display: flex;
@@ -505,6 +499,20 @@ img {
     display: flex;
     gap: 24px;
 
+}
+
+.footer-container-form {
+    margin-left: 80px;
+}
+
+.footer-form-field-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.17em;
+    letter-spacing: 0.02em;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
 }
 
 .footer-form-input {
@@ -783,7 +791,6 @@ img {
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 24px;
     min-width: 169px;
     max-height: 56px;
     padding: 16px 32px;
